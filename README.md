@@ -104,4 +104,3 @@ This project is licensed under the [**MIT** License.](https://chat.openai.com/LI
 
 <br/><br/><br/>
 
-Feel free to copy and use the above content in your Markdown document.
