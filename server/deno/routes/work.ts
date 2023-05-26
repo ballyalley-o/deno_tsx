@@ -1,5 +1,6 @@
 import { Router } from "https://deno.land/x/oak/mod.ts";
 import { Work } from "../models/Work.ts";
+import { getDB } from "../db/db_client.ts";
 
 const router = new Router();
 

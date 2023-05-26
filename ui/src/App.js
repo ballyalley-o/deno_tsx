@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Todos from './components/Todos';
+import Works from './components/Works';
 
 function App() {
-  return <Todos />;
+  return <Works />;
 }
 
 export default App;

@@ -1,5 +1,5 @@
-.todos__form,
-.todos__list {
+.works__form,
+.works__list {
   margin: 3rem auto;
   width: 90%;
   max-width: 40rem;
@@ -7,31 +7,46 @@
   padding: 1rem;
 }
 
-.todos__form label,
-.todos__form input {
+.works__form label,
+.works__form input {
   display: block;
   width: 100%;
   margin-bottom: 1rem;
 }
 
-.todos__form label {
+.works__form label {
   font-weight: bold;
+  color: #fff;
+  font-size: 3rem;
 }
 
-.todos__form input {
+.works__form input {
   font: inherit;
   border: 1px solid #ccc;
 }
 
-.todos__form input:focus {
-  border-color: purple;
+.works__form input:focus {
+  border-color: #999799
 }
 
-.todos__list {
+.works__list {
   list-style: none;
+  background-color: #999799;
+}y
+y
+
+.works__label {
+  font-weight: bold;
+  color: #000000;
 }
 
-.todos__list li {
+.works__form {
+  background-color: #999799;
+  justify-content: flex-end;
+  border-radius: 10px;
+}
+
+.works__list li {
   margin: 1rem auto;
   padding: 1rem;
   border: 1px solid purple;
@@ -40,11 +55,11 @@
   align-items: center;
 }
 
-.todos__list span {
+.works__list span {
   font-weight: bold;
   color: purple;
 }
 
-.todo__actions button {
+.works__actions button {
   margin-left: 1rem;
 }
