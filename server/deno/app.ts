@@ -1,18 +1,16 @@
 import { Application } from "https://deno.land/x/oak/mod.ts";
 import workRoute from "./routes/work.ts";
 import { connect } from "./db/db_client.ts";
+import { appExpress } from "./helpers/headers.ts";
 
 connect();
+
+
 
 const app = new Application();
 const PORT = 8000;
 
-app.use(async (ctx, next) => {
-  ctx.response.headers.set("Access-Control-Allow-Origin", "*");
-  ctx.response.headers.set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  ctx.response.headers.set("Access-Control-Allow-Headers", "Content-Type");
-  await next();
-})
+appExpress(app);
 
 
 app.use(workRoute.routes());
